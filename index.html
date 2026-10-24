@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | URCREATIVE AGENT</title>
+    <link rel="icon" type="image/jpeg" href="icons/logo.jpg">
+
+    <!-- Font: Cormorant Garamond (judul), Pinyon Script (aksen), Courier Prime (teks), Montserrat (logo) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;family=Courier+Prime:wght@400;700&amp;family=Montserrat:wght@500;600&amp;family=Pinyon+Script&amp;display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="page-index">
+
+    <!-- ===== HEADER / NAVBAR (sama di semua halaman) ===== -->
+    <header class="site-header">
+        <a class="logo" href="index.html" aria-label="Urcreative Agent home">
+            <img src="icons/logo.png" alt="URCREATIVE AGENT logo">
+            <span class="brand-wordmark">ur creative agent</span>
+        </a>
+
+        <button class="menu-toggle" aria-label="Buka menu" aria-expanded="false">Menu</button>
+
+        <nav class="site-nav">
+            <a href="index.html" class="active" aria-current="page">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="team.html">Team</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO: headline + foto utama -->
+        <section class="hero">
+            <div class="hero-text">
+                <p class="meta">Creative agency / Tangerang / 2026</p>
+
+                <h1>
+                    <span class="script">We Create.</span>
+                    <span>We Collaborate.</span>
+                    <span class="accent">We Grow.</span>
+                </h1>
+
+                <p class="lead">
+                    Kami membantu brand dan bisnis menciptakan produk serta jasa
+                    yang kreatif, berkualitas, dan relevan dengan kebutuhan mereka.
+                </p>
+
+                <p class="hero-actions">
+                    <a class="btn" href="portfolio.html">Lihat karya</a>
+                    <a class="btn btn-ghost" href="contact.html">Hubungi kami</a>
+                </p>
+            </div>
+
+            <figure class="hero-image">
+                <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&amp;fit=crop&amp;w=1400&amp;q=85" alt="Ruang kerja kreatif">
+                <figcaption>Better ideas. Bigger impact.</figcaption>
+            </figure>
+        </section>
+
+        <!-- Pintasan ke halaman lain -->
+        <section class="home-index">
+            <p class="meta">Jelajahi situs</p>
+
+            <div class="tiles">
+                <a href="about.html" class="tile">
+                    <img src="icons/logo.png" alt="About">
+                    <span>About</span>
+                </a>
+
+                <a href="services.html" class="tile">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" alt="Services">
+                    <span>Services</span>
+                </a>
+
+                <a href="portfolio.html" class="tile">
+                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" alt="Portfolio">
+                    <span>Portfolio</span>
+                </a>
+
+                <a href="team.html" class="tile">
+                    <img src="All/team.png" alt="Team">
+                    <span>Team</span>
+                </a>
+
+                <a href="contact.html" class="tile">
+                    <img src="icons/sosmed.png" alt="Contact">
+                    <span>Contact</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== FOOTER (sama di semua halaman) ===== -->
+    <footer class="site-footer">
+        <div class="footer-top">
+            <a class="logo" href="index.html" aria-label="Urcreative Agent home">
+                <img src="icons/logoputih.png" alt="URCREATIVE AGENT logo">
+            </a>
+
+            <nav class="site-nav">
+                <a href="index.html" class="active" aria-current="page">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="team.html">Team</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+
+        <div class="footer-bottom">
+            <span>Professional, Creative, Collaborative, Growth, Fun</span>
+            <span>&copy; 2026 URCREATIVE AGENT. All Rights Reserved.</span>
+        </div>
+    </footer>
+
+    <!-- Notifikasi kecil setelah form kontak dikirim -->
+    <div class="toast" id="toast" role="status">Pesan berhasil dikirim.</div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | URCREATIVE AGENT</title>
+    <link rel="icon" type="image/jpeg" href="icons/logo.jpg">
+
+    <!-- Font: Cormorant Garamond (judul), Pinyon Script (aksen), Courier Prime (teks), Montserrat (logo) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;family=Courier+Prime:wght@400;700&amp;family=Montserrat:wght@500;600&amp;family=Pinyon+Script&amp;display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="page-portfolio">
+
+    <!-- ===== HEADER / NAVBAR (sama di semua halaman) ===== -->
+    <header class="site-header">
+        <a class="logo" href="index.html" aria-label="Urcreative Agent home">
+            <img src="icons/logo.png" alt="URCREATIVE AGENT logo">
+            <span class="brand-wordmark">ur creative agent</span>
+        </a>
+
+        <button class="menu-toggle" aria-label="Buka menu" aria-expanded="false">Menu</button>
+
+        <nav class="site-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html" class="active" aria-current="page">Portfolio</a>
+            <a href="team.html">Team</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-head">
+            <p class="meta">Portfolio</p>
+            <h1>Selected <span class="script">work</span></h1>
+        </section>
+
+        <!-- Tombol filter kategori (data-filter harus sama dengan data-category di project) -->
+        <div class="filters">
+            <button class="filter active" data-filter="all">All</button>
+            <button class="filter" data-filter="web">Website/App</button>
+            <button class="filter" data-filter="illustration">Illustration</button>
+            <button class="filter" data-filter="market">Marketing</button>
+            <button class="filter" data-filter="design">Design</button>
+        </div>
+
+        <!-- Semua project berukuran sama.
+             Untuk menambah project: salin satu blok <article class="project"> lalu ganti isinya. -->
+        <section class="project-grid">
+
+            <!-- PROJECT 1 -->
+            <article class="project" data-category="web">
+                <a class="project-image" href="https://ujianpemweb.xo.je/" target="_blank" rel="noopener noreferrer">
+                    <img src="https://i.pinimg.com/736x/f3/0b/fd/f30bfdf8fc56d5417a9bb2407eb9f034.jpg" alt="Toko Kopi Nusantara">
+                </a>
+
+                <p class="meta">Website</p>
+                <h3>Toko Kopi Nusantara</h3>
+                <p class="project-desc">Website toko kopi lokal yang menampilkan katalog produk dan cerita brand dengan tampilan yang hangat.</p>
+                <a class="project-link" href="https://ujianpemweb.xo.je/" target="_blank" rel="noopener noreferrer">Lihat project</a>
+            </article>
+
+            <!-- PROJECT 2 -->
+            <article class="project" data-category="market">
+                <div class="project-image">
+                    <img src="Project/marketing/Noir.png" alt="Brand Identity Coffee">
+                </div>
+
+                <p class="meta">Marketing</p>
+                <h3>NOIR</h3>
+                <p class="project-desc">NOIR adalah brand fashion yang dibangun dengan konsep visual dark, bold, dan minimalis. Brand ini berfokus pada produk yang tidak hanya dipakai, tetapi juga memiliki identitas dan karakter yang kuat.</p>
+            </article>
+
+            <!-- PROJECT 3 -->
+            <article class="project" data-category="design, web">
+                <a class="project-image" href="https://www.figma.com/design/4P5xBVbmyWj2zYrNqqbNXM/Untitled?node-id=2002-2&t=SJnVPfh7ZvdIeP16-1" target="_blank" rel="noopener noreferrer">
+                    <img src="Project/design/ikyyyuiux.png" alt="UI UX DESIGN">
+                </a>
+
+                <p class="meta">UI/UX Design</p>
+                <h3>Design Website</h3>
+                <p class="project-desc">Rancangan antarmuka aplikasi dan website yang mudah dipahami, dari alur pengguna sampai tampilan layar utama.</p>
+                <a class="project-link" href="https://www.figma.com/design/4P5xBVbmyWj2zYrNqqbNXM/Untitled?node-id=2002-2&t=SJnVPfh7ZvdIeP16-1" target="_blank" rel="noopener noreferrer">Lihat project</a>
+            </article>
+
+            <!-- PROJECT 4 -->
+            <article class="project" data-category="design, web">
+                <a class="project-image" href="https://www.figma.com/proto/Kvbj77Hj4SpcVKj27Z9TG7/Untitled?node-id=53-3&amp;p=f&amp;t=nPzopF0f5t3Pw1AQ-1&amp;scaling=min-zoom&amp;content-scaling=fixed&amp;page-id=0%3A1&amp;starting-point-node-id=53%3A3" target="_blank" rel="noopener noreferrer">
+                    <img src="Project/design/uiuxelang.png" alt="Company Profile Website">
+                </a>
+
+                <p class="meta">UI/UX Design</p>
+                <h3>Design Website</h3>
+                <p class="project-desc">Desain website company profile yang rapi untuk memperkenalkan layanan dan profil perusahaan.</p>
+                <a class="project-link" href="https://www.figma.com/proto/Kvbj77Hj4SpcVKj27Z9TG7/Untitled?node-id=53-3&amp;p=f&amp;t=nPzopF0f5t3Pw1AQ-1&amp;scaling=min-zoom&amp;content-scaling=fixed&amp;page-id=0%3A1&amp;starting-point-node-id=53%3A3" target="_blank" rel="noopener noreferrer">Lihat project</a>
+            </article>
+
+                        <!-- PROJECT 5 -->
+            <article class="project" data-category="illustration">
+                            <div class="project-image">
+                    <img src="Project/illustration/rumah.png" alt="Company Profile Website">
+                            </div>
+
+                <p class="meta">Illustration</p>
+                <h3>Cozy Room Illustration</h3>
+                <p class="project-desc">Pembuatan ilustrasi digital bertema interior kamar dengan fokus pada komposisi ruang, pemilihan palet warna, pencahayaan, dan penataan elemen visual untuk menghasilkan tampilan yang harmonis.</p>            
+            </article>
+
+                        <!-- PROJECT 6 -->
+            <article class="project" data-category="design, market">
+                            <div class="project-image">
+                    <img src="Project/design/donatoon.png" alt="Donatoon">
+                            </div>
+
+                <p class="meta">Design · Marketing</p>
+                <h3>Donatoon</h3>
+                <p class="project-desc">Desain promosi menu Donatoon yang menampilkan berbagai pilihan rasa, mulai dari cokelat, vanilla, hingga stroberi dengan tampilan visual yang menarik.</p>            
+            </article>
+
+                        <!-- PROJECT 7 -->
+            <article class="project" data-category="design">
+                            <div class="project-image">
+                    <img src="Project/design/iduladha.png" alt="Iduladha">
+                            </div>
+
+                <p class="meta">Design</p>
+                <h3>Idul Adha</h3>
+                <p class="project-desc">Pembuatan poster untuk memperingati Hari Raya Idul Adha dengan perpaduan elemen dekoratif islami dan komposisi visual yang harmonis guna menyampaikan ucapan serta makna perayaan.</p>            
+            </article>
+
+                        <!-- PROJECT 8 -->
+            <article class="project" data-category="illustration">
+                            <div class="project-image">
+                    <img src="Project/illustration/auntumtown.png" alt="Auntumtown">
+                            </div>
+
+                <p class="meta">Illustration</p>
+                <h3>Illustrasi Auntumtown</h3>
+                <p class="project-desc">Pembuatan ilustrasi digital bertema kota musim gugur dengan fokus pada komposisi ruang, pemilihan palet warna, pencahayaan, dan penataan elemen visual untuk menghasilkan tampilan yang harmonis.</p>            
+            </article>
+
+                        <!-- PROJECT 9 -->
+            <article class="project" data-category="illustration">
+                            <div class="project-image">
+                    <img src="Project/illustration/wajah.png" alt="Wajah">
+                            </div>
+
+                <p class="meta">Illustration</p>
+                <h3>Character Design & Expression</h3>
+                <p class="project-desc">Kumpulan karya ilustrasi karakter yang mencakup digital portrait, studi anatomi tubuh, serta eksplorasi berbagai ekspresi wajah. Karya ini berfokus pada pengembangan karakter melalui bentuk, proporsi, ekspresi, dan detail visual untuk menciptakan karakter yang lebih hidup dan ekspresif.</p>            
+            </article>
+
+                        <!-- PROJECT 10 -->
+            <article class="project" data-category="illustration">
+                            <div class="project-image">
+                    <img src="Project/illustration/3d.png" alt="3d illustration">
+                            </div>
+
+                <p class="meta">Illustration</p>
+                <h3>3D Illustration</h3>
+                <p class="project-desc">Proses awal pembuatan model 3D yang berfokus pada penyusunan bentuk dasar, proporsi, dan struktur objek sebagai fondasi sebelum pengembangan detail lebih lanjut.</p>            
+            </article>
+            
+                        <!-- PROJECT 11 -->
+            <article class="project" data-category="design, web">
+                     <a class="project-image" href="https://www.figma.com/design/spyGdDkvhnaYQznLdMsAVH/Untitled?node-id=0-1&m=dev&t=0XulwALism2boL7a-1" target="_blank" rel="noopener noreferrer">
+                    <img src="Project/design/binfor1.png" alt="Design Website">
+                            </div>
+
+                <p class="meta">UI/UX Design</p>
+                <h3>Design Website</h3>
+                <p class="project-desc">Proses awal pembuatan model 3D yang berfokus pada penyusunan bentuk dasar, proporsi, dan struktur objek sebagai fondasi sebelum pengembangan detail lebih lanjut.</p>    
+                <a class="project-link" href="https://www.figma.com/design/spyGdDkvhnaYQznLdMsAVH/Untitled?node-id=0-1&m=dev&t=0XulwALism2boL7a-1" target="_blank" rel="noopener noreferrer">Lihat project</a>        
+            </article>
+
+                        <!-- PROJECT 12 -->
+            <article class="project" data-category="design, market">
+                            <div class="project-image">
+                    <img src="Project/design/kebab.png" alt="Kebaboom">
+                            </div>
+
+                <p class="meta">Packaging Design</p>
+                <h3>Kebaboom Packaging</h3>
+                <p class="project-desc">Design kemasan yang mengusung konsep visual modern dan menarik melalui perpaduan warna cokelat cerah dan cokelat gelap. Penggunaan warna yang harmonis pada elemen grafis dan tipografi menciptakan tampilan yang konsisten, memberikan karakter visual yang kuat, serta menghadirkan desain kemasan yang sederhana namun tetap berkesan.</p>    
+            </article>
+
+                        <!-- PROJECT 13 -->
+            <article class="project" data-category="design, market">
+                            <div class="project-image">
+                    <img src="Project/design/aruna.png" alt="Aruna Express">
+                            </div>
+
+                <p class="meta">Logo Design</p>
+                <h3>Logo Design Aruna Express</h3>
+                <p class="project-desc">Proyek desain logo yang berfokus pada penciptaan identitas visual yang unik, menarik, dan mudah dikenali. Menggabungkan bentuk, tipografi, serta elemen grafis yang selaras untuk menghasilkan logo yang memiliki karakter kuat dan merepresentasikan identitas brand secara efektif.</p>    
+            </article>
+
+                        <!-- PROJECT 14 -->
+            <article class="project" data-category="design">
+                            <div class="project-image">
+                    <img src="Project/design/cerdas.png" alt="Infografis cerdas bermedia digital">
+                            </div>
+
+                <p class="meta">Infografis</p>
+                <h3>Cerdas dalam Bermedia Digital</h3>
+                <p class="project-desc">desain infografis yang mengangkat pentingnya kesadaran dan kebijaksanaan dalam menggunakan media digital. Menggabungkan elemen visual, ilustrasi, dan tipografi yang informatif untuk menyampaikan pesan secara jelas, menarik, serta mudah dipahami oleh audiens.</p>    
+            </article>
+
+                        <!-- PROJECT 15 -->
+            <article class="project" data-category="design">
+                            <div class="project-image">
+                    <img src="Project/design/leomessi.png" alt="Poster Leo Messi">
+                            </div>
+
+                <p class="meta">poster</p>
+                <h3>Poster Leo Messi</h3>
+                <p class="project-desc">poster yang menampilkan Lionel Messi dengan konsep visual yang ekspresif dan berkarakter. Menggabungkan komposisi dinamis, tipografi yang kuat, serta elemen visual yang merepresentasikan perjalanan dan pencapaiannya dalam dunia sepak bola, dengan tagline “The Man Who Completed Football” sebagai bentuk apresiasi terhadap warisan dan prestasinya.</p>    
+            </article>
+
+                        <!-- PROJECT 16 -->
+            <article class="project" data-category="design, market">
+                            <div class="project-image">
+                    <img src="Project/design/backroom.png" alt="Poster Film Backroom"> 
+                            </div>
+
+                <p class="meta">poster</p>
+                <h3>Poster Film Backroom</h3>
+                <p class="project-desc">desain poster yang mengangkat konsep misteri dan atmosfer surreal melalui perpaduan komposisi visual, pencahayaan, serta pemilihan warna yang menciptakan kesan asing dan tidak nyaman. Dirancang untuk membangun suasana yang imersif, memperkuat karakter visual, dan menghadirkan pengalaman visual yang penuh teka-teki.</p>    
+            </article>
+
+            <!-- PROJECT 17: Foto baru dari folder Project/design -->
+            <article class="project" data-category="design">
+                <div class="project-image">
+                    <img src="Project/design/dante.png" alt="Project design Dante">
+                </div>
+
+                <p class="meta">Design</p>
+                <h3>Dante</h3>
+                <p class="project-desc">Poster Ilustrasi Karakter (Character Concept Art Poster) dengan gaya estetika Propaganda / Militer Fiksi.</p>
+            </article>
+
+            <!-- PROJECT 18: Foto baru dari folder Project/design -->
+            <article class="project" data-category="design">
+                <div class="project-image">
+                    <img src="Project/design/sukarno.png" alt="Project design Sukarno">
+                </div>
+
+                <p class="meta">Design</p>
+                <h3>Peringatan hari pahlawan</h3>
+                <p class="project-desc">Desain poster peringatan Hari Pahlawan bertema vintage-klasik. Menggabungkan teknik kolase foto Ir. Soekarno dengan tekstur surat kabar tua dan tipografi bold untuk memperkuat pesan sejarah bangsa.</p>
+            </article>
+
+            <!-- PROJECT 19: Foto baru dari folder Project/design -->
+            <article class="project" data-category="design">
+                <div class="project-image">
+                    <img src="Project/design/tekken8.png" alt="Project design Tekken 8">
+                </div>
+
+                <p class="meta">Design</p>
+                <h3>Poster Tekken 8 kolaborasi kacamata terbatas</h3>
+                <p class="project-desc">Desain poster promosi kolaborasi kacamata edisi terbatas antara Gentle Monster dan TEKKEN 8, menampilkan karakter Kazuya Mishima dengan gaya editorial grungy yang memadukan visual karakter, detail produk, dan kemasan khusus dalam satu layout</p>
+            </article>
+
+            <!-- PROJECT 20: Foto baru dari folder Project/marketing -->
+            <article class="project" data-category="design, market">
+                <div class="project-image">
+                    <img src="Project/marketing/barca.png" alt="Project marketing Barca">
+                </div>
+
+                <p class="meta">Marketing</p>
+                <h3>FC Barcelona x Cactus Jack Limited Edition Jersey</h3>
+                <p class="project-desc">Desain poster promosi untuk peluncuran jersi kolaborasi eksklusif dan terbatas (1.899 unit) antara klub FC Barcelona dan jenama streetwear Cactus Jack (Travis Scott). Menggunakan teknik kolase pemain dengan efek visual duotone bertekstur grain (biru-toska dan ungu) untuk menonjolkan jersi utama yang tetap berwarna alami di bagian tengah, menciptakan kesan modern, prestisius, dan erat dengan budaya urban.</p>
+            </article>
+
+            <!-- PROJECT 21: Foto baru dari folder Project/marketing -->
+            <article class="project" data-category="design, market">
+                <div class="project-image">
+                    <img src="Project/marketing/djamu.png" alt="Project marketing Djamu">
+                </div>
+
+                <p class="meta">Marketing</p>
+                <h3>Djamu Iboe – Visual Identity & Logo Design</h3>
+                <p class="project-desc">Desain identitas visual dan logo untuk merek minuman herbal tradisional "Djamu Iboe". Menggabungkan tipografi serif modern yang elegan dengan monogram huruf 'D' berbentuk daun bernuansa motif batik emas, mencerminkan perpaduan kealamian produk, warisan budaya lokal, serta kesan premium.</p>
+            </article>
+
+            <!-- PROJECT 22: Foto baru dari folder Project/marketing -->
+            <article class="project" data-category="design, market">
+                <div class="project-image">
+                    <img src="Project/marketing/fererro.png" alt="Project marketing Fererro">
+                </div>
+
+                <p class="meta">Marketing</p>
+                <h3>Ferrero Rocher Special Edition Packaging Design</h3>
+                <p class="project-desc">desain kemasan (flat net/die-cut) edisi spesial Ferrero Rocher dengan pendekatan estetika botani klasik. Memadukan ilustrasi vintage buah hazelnut dan dedaunan yang mendetail dengan palet warna bumi (earthy seperti sage green, hitam, dan cokelat) serta tipografi serif elegan untuk menampilkan kesan alami, organik, dan tetap premium khas produk cokelat legendaris ini.</p>
+            </article>
+
+            <!-- PROJECT 23: Foto baru dari folder Project/marketing -->
+            <article class="project" data-category="design, market">
+                <div class="project-image">
+                    <img src="Project/marketing/lilbig.png" alt="Project marketing Lil Big">
+                </div>
+
+                <p class="meta">Marketing</p>
+                <h3>Lilbig Curry – Promotional Food Poster Design</h3>
+                <p class="project-desc">Desain poster promosi kuliner untuk produk hidangan "Lilbig Curry". Menggunakan latar belakang warna kuning hangat yang menggugah selera, fokus utama pada fotografi produk hidangan kari yang kaya bumbu, serta pemanfaatan tipografi bold berorientasi vertikal untuk tampilan yang pop dan modern.</p>
+            </article>
+
+            <!-- PROJECT 24: Foto baru dari folder Project/marketing -->
+            <article class="project" data-category="design, market">
+                <div class="project-image">
+                    <img src="Project/marketing/marty.png" alt="Project marketing Marty">
+                </div>
+
+                <p class="meta">Marketing</p>
+                <h3>Marty Supreme</h3>
+                <p class="project-desc">Desain konsep poster film alternatif bergaya Japanese retro cinematic untuk film "Marty Supreme". Menggabungkan efek motion blur aksi jalanan yang dinamis pada visual utama Timothée Chalamet, tipografi judul berwarna merah tebal yang ekspresif, serta susunan grid karakter bergaya poster cetak klasik.</p>
+            </article>
+
+            <!-- PROJECT 25: Foto baru dari folder Project/marketing -->
+            <article class="project" data-category="design, market">
+                <div class="project-image">
+                    <img src="Project/marketing/rangerhover.png" alt="Project marketing Ranger Hover">
+                </div>
+
+                <p class="meta">Marketing</p>
+                <h3>Land Rover – "Experience The Journey" Commercial Poster Concept</h3>
+                <p class="project-desc">Konsep desain poster promosi otomotif untuk Land Rover yang menonjolkan lini Range Rover. Menggabungkan komposisi visual multi-sudut pandang (split perspective) kendaraan dengan latar warna netral yang minimalis, tipografi headline yang tegas, serta penjelasan fitur unggulan kendaraan di bagian bawah.</p>
+            </article>
+
+            <!-- PROJECT 26: Foto baru dari folder Project/marketing -->
+            <article class="project" data-category="design, market">
+                <div class="project-image">
+                    <img src="Project/marketing/warungris.png" alt="Project marketing Warung Ris">
+                </div>
+
+                <p class="meta">Marketing</p>
+                <h3>Warung Mbak Ris – Food Stall Banner & Menu Design</h3>
+                <p class="project-desc">Desain spanduk promosi horizontal untuk "Warung Mbak Ris". Menggunakan perpaduan warna kuning dan cokelat yang menggugah selera, dilengkapi dengan elemen foto produk, ajakan pembeli (call-to-action), serta papan daftar menu yang tertata rapi di bagian kanan.</p>
+            </article>
+
+            <!-- PROJECT 1 -->
+            <article class="project" data-category="web">
+                <a class="project-image" href="https://smartlibperpusdigital-fmwq.vercel.app/" target="_blank" rel="noopener noreferrer">
+                    <img src="Project/website/webperpus.png" alt="SmartLib – Digital Library Web Application">
+                </a>
+
+                <p class="meta">Website</p>
+                <h3>SmartLib – Digital Library Web Application</h3>
+                <p class="project-desc">website perpustakaan digital "SmartLib" untuk memfasilitasi akses dan pengelolaan koleksi buku secara daring. Mengusung antarmuka dark mode bernuansa biru-toska yang modern, navigasi sistem terstruktur (dashboard, koleksi, absensi), serta tampilan statistik data interaktif.</p>
+                <a class="project-link" href="https://smartlibperpusdigital-fmwq.vercel.app/" target="_blank" rel="noopener noreferrer">Lihat project</a>
+            </article>
+        </section>
+
+        <p class="empty-state" hidden>Belum ada project di kategori ini.</p>
+    </main>
+
+    <!-- ===== FOOTER (sama di semua halaman) ===== -->
+    <footer class="site-footer">
+        <div class="footer-top">
+            <a class="logo" href="index.html" aria-label="Urcreative Agent home">
+                <img src="icons/logoputih.png" alt="URCREATIVE AGENT logo">
+            </a>
+
+            <nav class="site-nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="portfolio.html" class="active" aria-current="page">Portfolio</a>
+                <a href="team.html">Team</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+
+        <div class="footer-bottom">
+            <span>Professional, Creative, Collaborative, Growth, Fun</span>
+            <span>&copy; 2026 URCREATIVE AGENT. All Rights Reserved.</span>
+        </div>
+    </footer>
+
+    <!-- Notifikasi kecil setelah form kontak dikirim -->
+    <div class="toast" id="toast" role="status">Pesan berhasil dikirim.</div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
