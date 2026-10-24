@@ -11,10 +11,36 @@
 const header = document.querySelector(".site-header");
 const menuToggle = document.querySelector(".menu-toggle");
 
-menuToggle.addEventListener("click", () => {
-    const isOpen = header.classList.toggle("open");
-    menuToggle.setAttribute("aria-expanded", isOpen);
-});
+if (header && menuToggle) {
+    menuToggle.addEventListener("click", () => {
+        const isOpen = header.classList.toggle("open");
+        menuToggle.setAttribute("aria-expanded", isOpen);
+    });
+
+    // Tutup menu jika klik di luar header
+    document.addEventListener("click", (e) => {
+        if (header.classList.contains("open") && !header.contains(e.target)) {
+            header.classList.remove("open");
+            menuToggle.setAttribute("aria-expanded", "false");
+        }
+    });
+
+    // Tutup menu jika tekan tombol Escape
+    document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && header.classList.contains("open")) {
+            header.classList.remove("open");
+            menuToggle.setAttribute("aria-expanded", "false");
+        }
+    });
+
+    // Tutup menu saat salah satu link navigasi diklik
+    header.querySelectorAll(".site-nav a").forEach((link) => {
+        link.addEventListener("click", () => {
+            header.classList.remove("open");
+            menuToggle.setAttribute("aria-expanded", "false");
+        });
+    });
+}
 
 
 /* --------------------------------------------------------------------------
